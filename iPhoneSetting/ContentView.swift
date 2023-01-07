@@ -16,6 +16,7 @@ struct ContentView: View {
                         
                         HStack(alignment: .center) {
                             Image(systemName:"person.crop.circle.fill")
+                                .symbolRenderingMode(.multicolor)
                                 .resizable()
                                 .frame(width: 70, height: 70)
                             VStack(alignment: .leading) {
@@ -31,6 +32,7 @@ struct ContentView: View {
                     List {
                         HStack(alignment: .center, spacing: 10) {
                             Image(systemName:"hourglass.circle.fill")
+                                .symbolRenderingMode(.multicolor)
                                 .resizable()
                                 .frame(width: 30, height: 30)
                             NavigationLink("스크린 타임") {
@@ -42,8 +44,8 @@ struct ContentView: View {
                 Section{
                     List {
                         HStack(alignment: .center, spacing:10) {
-                            Image(systemName:"gear.circle.fill")
-                                
+                            Image("환경설정")
+                               
                                 .resizable()
                                 .frame(width: 30, height: 30)
                             NavigationLink("일반") {
@@ -54,6 +56,7 @@ struct ContentView: View {
                         }
                         HStack(alignment: .center, spacing:10) {
                             Image(systemName:"hourglass.circle.fill")
+                                .symbolRenderingMode(.multicolor)
                                 .resizable()
                                 .frame(width: 30, height: 30)
                             NavigationLink("손쉬운 사용") {
@@ -63,6 +66,7 @@ struct ContentView: View {
                         }
                         HStack(alignment: .center, spacing: 10) {
                             Image(systemName:"hand.raised")
+                                .symbolRenderingMode(.multicolor)
                                 .resizable()
                                 .frame(width: 20, height: 30)
                             NavigationLink("개인 정보 보호") {
@@ -76,6 +80,7 @@ struct ContentView: View {
                     List {
                         HStack(alignment: .center, spacing: 10) {
                             Image(systemName:"key")
+                                .symbolRenderingMode(.multicolor)
                                 
                                 
                             NavigationLink("암호") {
@@ -87,8 +92,8 @@ struct ContentView: View {
                 Section{
                     List {
                         HStack(alignment: .center, spacing:10) {
-                            Image(systemName:"safari")
-                                
+                            Image("사파리")
+                                .symbolRenderingMode(.multicolor)
                                 .resizable()
                                 .frame(width: 30, height: 30)
                             NavigationLink("Safari") {
@@ -97,6 +102,7 @@ struct ContentView: View {
                         }
                         HStack(alignment: .center, spacing:10) {
                             Image(systemName:"hourglass.circle.fill")
+                                .symbolRenderingMode(.multicolor)
                                 .resizable()
                                 .frame(width: 30, height: 30)
                             NavigationLink("News") {
@@ -106,6 +112,7 @@ struct ContentView: View {
                         }
                         HStack(alignment: .center, spacing: 10) {
                             Image(systemName:"hand.raised")
+                                .symbolRenderingMode(.multicolor)
                                 .resizable()
                                 .frame(width: 20, height: 30)
                             NavigationLink("번역") {
@@ -114,6 +121,7 @@ struct ContentView: View {
                         }
                         HStack(alignment: .center, spacing:10) {
                             Image(systemName:"hourglass.circle.fill")
+                                .symbolRenderingMode(.multicolor)
                                 .resizable()
                                 .frame(width: 30, height: 30)
                             NavigationLink("지도") {
@@ -123,6 +131,7 @@ struct ContentView: View {
                         }
                         HStack(alignment: .center, spacing:10) {
                             Image(systemName:"hourglass.circle.fill")
+                                .symbolRenderingMode(.multicolor)
                                 .resizable()
                                 .frame(width: 30, height: 30)
                             NavigationLink("단축어") {
@@ -131,7 +140,18 @@ struct ContentView: View {
                             }
                         }
                         HStack(alignment: .center, spacing:10) {
+                            Image("하트")
+                                .symbolRenderingMode(.multicolor)
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                            NavigationLink("건강") {
+                                Text("건강")
+                                
+                            }
+                        }
+                        HStack(alignment: .center, spacing:10) {
                             Image(systemName:"hourglass.circle.fill")
+                                .symbolRenderingMode(.multicolor)
                                 .resizable()
                                 .frame(width: 30, height: 30)
                             NavigationLink("Siri 및 검색") {
@@ -140,7 +160,7 @@ struct ContentView: View {
                             }
                         }
                         HStack(alignment: .center, spacing:10) {
-                            Image(systemName:"hourglass.circle.fill")
+                            Image("앨범")
                                 .resizable()
                                 .frame(width: 30, height: 30)
                             NavigationLink("사진") {
@@ -150,6 +170,7 @@ struct ContentView: View {
                         }
                         HStack(alignment: .center, spacing:10) {
                             Image(systemName:"hourglass.circle.fill")
+                                .symbolRenderingMode(.multicolor)
                                 .resizable()
                                 .frame(width: 30, height: 30)
                             NavigationLink("Game Center") {
@@ -165,7 +186,7 @@ struct ContentView: View {
                     List {
                         HStack(alignment: .center, spacing: 10) {
                             Image(systemName:"hammer.circle.fill")
-                                
+                                .symbolRenderingMode(.multicolor)
                                 
                             NavigationLink("개발자") {
                                 Text("개발자")
