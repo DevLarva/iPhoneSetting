@@ -14,6 +14,7 @@ struct LoginModal: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var email: String = ""
+    @State private var showingAlert = false //alert출력
     @FocusState private var focusedField: Field?
     var body: some View {
         VStack {
@@ -31,6 +32,9 @@ struct LoginModal: View {
                         focusedField = .email
                     }
                 }
+               
+                    
+               
                 
                 .padding()
                 
@@ -54,16 +58,22 @@ struct LoginModal: View {
                 HStack(alignment: .center, spacing: 20) {
                     Text("Apple ID").bold()
                     TextField("이메일", text: $email)
-                        
                         .focused($focusedField, equals: .email)
-                    
-                    
-                    
                 }
                 .padding()
                 
                 Divider()
                 
+                Button("Apple ID가 없거나 잊어버렸습니까?") {
+                           showingAlert = true
+                       }
+                       .alert("Apple ID가 없거나 잊어버렸습니까?", isPresented: $showingAlert) {
+                           Button("Apple ID 생성") { }
+                           Button("Apple ID를 잊어버렸습니까?") { }
+                           Button("취소") { }
+                       }
+                
+      
             Spacer()
             }
             
