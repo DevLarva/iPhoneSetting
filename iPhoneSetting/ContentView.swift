@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showModal = false //상태
     var body: some View {
         NavigationView {
             Form {
@@ -20,8 +21,14 @@ struct ContentView: View {
                                 
                                 
                             VStack(alignment: .leading) {
-                                NavigationLink("iPhone에 로그인") {
-                                    Text("안녕하세요")
+                                Button(action: {
+                                    print("hello button!")
+                                    self.showModal = true
+                                }) {
+                                    Text("iPhone에 로그인")
+                                }
+                                .sheet(isPresented: self.$showModal) {
+                                    LoginModal()
                                 }
                                 Text("iCloud, App Store 등 설정")
                             }
