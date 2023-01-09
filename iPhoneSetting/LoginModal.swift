@@ -72,27 +72,42 @@ struct LoginModal: View {
                            Button("Apple ID를 잊어버렸습니까?") { }
                            Button("취소") { }
                        }
-                HStack(alignment: .center, spacing: 30) {
-                    Image(systemName: "hand.raised.app.fill")
+                
+                
+                Spacer()
+                    .frame(height: 10)
+                
+                HStack(alignment: .center, spacing: 10) {
+                    Image("아이클라우드")
                         .resizable()
-                        .frame(width: 30, height: 30)
-                    Image(systemName: "hand.raised.app.fill")
+                        .frame(width: 40, height: 40)
+                    Image("앱 스토어")
                         .resizable()
-                        .frame(width: 30, height: 30)
-                    Image(systemName: "hand.raised.app.fill")
+                        .frame(width: 40, height: 40)
+                    Image("노래")
                         .resizable()
-                        .frame(width: 30, height: 30)
-                    Image(systemName: "hand.raised.app.fill")
+                        .frame(width: 40, height: 40)
+                    Image("메세지")
                         .resizable()
-                        .frame(width: 30, height: 30)
-                    Image(systemName: "hand.raised.app.fill")
+                        .frame(width: 40, height: 40)
+                    Image("find-my")
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 40, height: 40)
+                    Image("wallet")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                    
                 }
                 
-      
             Spacer()
             }
+            
+            VStack {
+                Text("Apple ID는 모든 Apple 서비스를 이용할 때 사용하는 계정입니다.")
+            }
+            
+            
+        
             
         }
         
