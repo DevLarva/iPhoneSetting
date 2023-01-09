@@ -72,7 +72,7 @@ struct ContentView: View {
                             }
                         }
                         HStack(alignment: .center, spacing: 10) {
-                            Image("보안")
+                            Image(systemName: "hand.raised.app.fill")
                                 .symbolRenderingMode(.multicolor)
                                 .resizable()
                                 .frame(width: 30, height: 30)

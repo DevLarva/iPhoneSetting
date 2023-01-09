@@ -15,7 +15,7 @@ struct LoginModal: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var email: String = ""
     @State private var showingAlert = false //alert출력
-    @FocusState private var focusedField: Field?
+    @FocusState private var focusedField: Field? // 텍스트 필드 포커스
     var body: some View {
         VStack {
             HStack {
@@ -72,6 +72,23 @@ struct LoginModal: View {
                            Button("Apple ID를 잊어버렸습니까?") { }
                            Button("취소") { }
                        }
+                HStack(alignment: .center, spacing: 30) {
+                    Image(systemName: "hand.raised.app.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                    Image(systemName: "hand.raised.app.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                    Image(systemName: "hand.raised.app.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                    Image(systemName: "hand.raised.app.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                    Image(systemName: "hand.raised.app.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                }
                 
       
             Spacer()
