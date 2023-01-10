@@ -39,9 +39,11 @@ struct LoginModal: View {
                 .padding()
                 
             }
-            Spacer()
+           
+            
             
             VStack(spacing: 10){
+                
                 Text("Apple ID")
                     .font(.title)
                 
@@ -63,19 +65,25 @@ struct LoginModal: View {
                 .padding()
                 
                 Divider()
-                
+            }
+            
+                Spacer()
+                    .frame(height: 10)
+            
                 Button("Apple ID가 없거나 잊어버렸습니까?") {
                            showingAlert = true
                        }
+            
                        .alert("Apple ID가 없거나 잊어버렸습니까?", isPresented: $showingAlert) {
                            Button("Apple ID 생성") { }
                            Button("Apple ID를 잊어버렸습니까?") { }
                            Button("취소") { }
                        }
+            Spacer()
+                .frame(height: 30)
+        
                 
                 
-                Spacer()
-                    .frame(height: 10)
                 
                 HStack(alignment: .center, spacing: 10) {
                     Image("아이클라우드")
@@ -98,20 +106,18 @@ struct LoginModal: View {
                         .frame(width: 40, height: 40)
                     
                 }
-                
             Spacer()
-            }
-            
+                .frame(height: 20)
             VStack {
                 Text("Apple ID는 모든 Apple 서비스를 이용할 때 사용하는 계정입니다.")
             }
             
             
-        
-            
-        }
-        
-        
+            Spacer()
+       
+       
+            }
+
     }
 }
 struct LoginModal_Previews: PreviewProvider {
