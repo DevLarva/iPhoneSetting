@@ -172,7 +172,7 @@ struct ContentView: View {
                                 .resizable()
                                 .frame(width: 30, height: 30)
                             NavigationLink("사진") {
-                                Text("사진")
+                                PictureView()
                                 
                             }
                         }
