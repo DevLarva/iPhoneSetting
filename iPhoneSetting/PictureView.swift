@@ -12,8 +12,10 @@ struct PictureView: View {
     @State var AlbumtoggleOn = true
     @State var ViedeotoggleOn = true
     @State var ContentToggleOn = true
+    @State private var showActionSheet = false //alert출력
+    @State private var showActionSheet2 = false //alert출력
     var body: some View {
-// MARK: - 처음 네비게이션뷰가 시작하는 부분에서만 네비게이션뷰를 사용 안그럼 계속 쌓여서 중첩되서 뷰가 밀림.
+        // MARK: - 처음 네비게이션뷰가 시작하는 부분에서만 네비게이션뷰를 사용 안그럼 계속 쌓여서 중첩되서 뷰가 밀림.
         
         List{
             Section{
@@ -63,12 +65,31 @@ struct PictureView: View {
             
             Section {
                 VStack {
-                    VStack {
-                        Text("teasdasd")
+                    Button("제안된 추억 재설정") {
+                        self.showActionSheet = true
                     }
+                }.actionSheet(isPresented: $showActionSheet) {
+                    ActionSheet(
+                        title: Text("재설정하면 이전에 차단한 장소, 날짜 또는 공휴일이 새로 생성되는 '추억'에 다시 포함됩니다."),
+                        buttons: [
+                            .cancel { print(self.showActionSheet) },
+                            .destructive(Text("재설정"))
+                        ]
+                    )
+                    
                 }
                 VStack {
-                    Text("teasdasd")
+                    Button("사람 제안 재설정") {
+                        self.showActionSheet2 = true
+                    }
+                }.actionSheet(isPresented: $showActionSheet2) {
+                    ActionSheet(
+                        title: Text("재설정하면 제안을 줄이도록 지정한 사람이 새로운 추억 및 추천 사진에 다시 포함됩니다."),
+                        buttons: [
+                            .cancel{ print(self.showActionSheet2) },
+                            .destructive(Text("재설정"))
+                        ]
+                    )
                     
                 }
                 HStack {

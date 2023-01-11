@@ -22,7 +22,7 @@ struct ContentView: View {
                                 
                             VStack(alignment: .leading) {
                                 Button(action: {
-                                    print("hello button!")
+                                    
                                     self.showModal = true
                                 }) {
                                     Text("iPhone에 로그인")
