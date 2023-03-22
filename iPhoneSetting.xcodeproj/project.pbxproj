@@ -13,6 +13,7 @@
 		AC4DA1192968567E001267E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4DA1182968567E001267E0 /* Preview Assets.xcassets */; };
 		AC7E976C296D55E4006E4DA8 /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E976B296D55E4006E4DA8 /* PictureView.swift */; };
 		AC87A8D9296A86C0007F55D9 /* LoginModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87A8D8296A86C0007F55D9 /* LoginModal.swift */; };
+		ACC59A5629CB1C2600A75EA6 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = ACC59A5529CB1C2600A75EA6 /* Documentation.docc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AC4DA1182968567E001267E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC7E976B296D55E4006E4DA8 /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
 		AC87A8D8296A86C0007F55D9 /* LoginModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModal.swift; sourceTree = "<group>"; };
+		ACC59A5529CB1C2600A75EA6 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		AC4DA1102968567D001267E0 /* iPhoneSetting */ = {
 			isa = PBXGroup;
 			children = (
+				ACC59A5529CB1C2600A75EA6 /* Documentation.docc */,
 				AC4DA1112968567D001267E0 /* iPhoneSettingApp.swift */,
 				AC4DA1132968567D001267E0 /* ContentView.swift */,
 				AC87A8D8296A86C0007F55D9 /* LoginModal.swift */,
@@ -146,6 +149,7 @@
 				AC4DA1142968567D001267E0 /* ContentView.swift in Sources */,
 				AC4DA1122968567D001267E0 /* iPhoneSettingApp.swift in Sources */,
 				AC87A8D9296A86C0007F55D9 /* LoginModal.swift in Sources */,
+				ACC59A5629CB1C2600A75EA6 /* Documentation.docc in Sources */,
 				AC7E976C296D55E4006E4DA8 /* PictureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
